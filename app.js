@@ -11,7 +11,7 @@ app.use(cors());
 
 mongoose.connect("mongodb://localhost/todocrud", {
   useNewUrlParser: true,
-  useFindAndModify: true,
+  useFindAndModify: false,
   useUnifiedTopology: true
 });
 mongoose.connection.once("open", () => {
